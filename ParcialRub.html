@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Churrasquería Churqui</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #670707;
+            color: white;
+        }
+        .navbar {
+            background-color: #1A1A1A;
+        }
+        .btn-custom {
+            background-color: #D29547;
+            color: white;
+        }
+        .btn-custom:hover {
+            background-color: #A3672C;
+        }
+        .card {
+            background-color: #1A1A1A;
+            border: none;
+        }
+        /* Ajuste del tamaño del carrusel al 50% */
+        .carousel-inner img {
+            height: 400px; /* Ajusta la altura */
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Churrasquería Churqui</a>
+           
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cortes de Carne</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="file:///C:/xampp/htdocs/parcial/NuestraUbicacion.html">NUESTRA UBICACION</a>
+                    
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carrusel -->
+    <div id="carouselExampleIndicators" class="carousel slide mt-3" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+                
+            <div class="carousel-item active">
+                <img src="parrilla.jpg" class="w-100" alt="Imagen">
+                <div style="text-align: center;">
+                    <p6>¡Los mejores parrilleros!</p6>
+                </div>                                 
+            </div>
+            <div class="carousel-item">
+                <img src="ca2.jpg" class="w-100" alt="Imagen 2">
+                <div style="text-align: center;">
+                    <p6>¡Las mejores bebidas!</p6>
+                </div> 
+            </div>
+            <div class="carousel-item">
+                <img src="ambiente.jpg" class="d-block w-100" alt="Imagen 3">
+                <div style="text-align: center;">
+                    <p6>¡El mejor ambiente!</p6>
+                </div> 
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+    </div>
+
+    <!-- Sección de tarjetas -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <img src="matambre.jpg" class="card-img-top" alt="Producto 1" height = "230">
+                    <div class="card-body">
+                        <h5 class="card-title">Cuadril</h5>
+                        <p class="card-text">Un corte plano y grande, ideal para rellenar con diversos ingredientes.</p>
+                        <p class="card-text">mas el marcado de cuchillo como se pida</p>
+                        <a href="https://web.whatsapp.com/" class= "btn btn-custom">DEGUSTARr</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <img src="c3.jpg" class="card-img-top" alt="Curso de Asado" >
+                    <div class="card-body">
+                        <h5 class="card-title">VACIO</h5>
+                        <p class="card-text">Un corte magro y sabroso</p>
+                        <p class="card-text">Perfecto para quienes prefieren carnes más ligeras.</p>
+                        <a href="https://web.whatsapp.com/" class="btn btn-custom">DEGUSTAR</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <img src="asadotira.jpg" class="card-img-top" alt="Producto 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Asado /tira</h5>
+                        <p class="card-text"> Un corte grande y jugoso</p>
+                        <p class="card-text"> Ideal para compartir..</p>
+                        <a href="https://web.whatsapp.com/" class="btn btn-custom">DEGUSTAR</a>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+<style>
+    .footer {
+            background-color: #ffffff; /* Color de fondo oscuro */
+            color: rgb(0, 0, 0);
+            padding: 10px 0;
+            position: relative;
+        }
+        
+</style>
+  <!-- Footer -->
+  <footer class="footer">
+    <div style="text-align: center;">
+        <p>@ Derechos Reservados 2024</p>
+    </div>
+</footer>
+</body>
+</html>
